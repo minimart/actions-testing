@@ -1,5 +1,5 @@
 name: branch-naming
-on: [create]
+on: [push]
 
 jobs:
   Check-Branch-Name:
