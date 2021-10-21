@@ -1,9 +1,8 @@
 name: branch-naming
 on: [push]
-
 jobs:
   Check-Branch-Name:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Check out repository code
