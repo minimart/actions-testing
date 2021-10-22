@@ -12,19 +12,24 @@ jobs:
         run: echo "Running on branch ${GITHUB_REF#refs/heads/} "
       - run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
-      - run: echo "FIX? ${{ startsWith(steps.extract_branch.outputs.branch, 'fix') }} "
-      - run: echo "FEATURE? ${{ startsWith(steps.extract_branch.outputs.branch, 'feature') }} "
-      - run: echo "TEST? ${{ startsWith(steps.extract_branch.outputs.branch, 'test') }} "
-      - run: echo "HOTFIX? ${{ startsWith(steps.extract_branch.outputs.branch, 'hotfix') }} "
-      - run: echo "BUG- not standard...? ${{ startsWith(steps.extract_branch.outputs.branch, 'bug') }} "
-      - name: Check Branch Name Prefix
+      - name: Check Branch Name Prefix Success
         run: echo "🥳 Yay! Correct Prefix!"
         if: |
           startsWith(steps.extract_branch.outputs.branch, 'fix')
           || startsWith(steps.extract_branch.outputs.branch, 'feature')
           || startsWith(steps.extract_branch.outputs.branch, 'test')
           || startsWith(steps.extract_branch.outputs.branch, 'hotfix')
-          || startsWith(steps.extract_branch.outputs.branch, 'bug')
+      - name: Check Branch Name Prefix Failure
+        run: echo " 🤬 Name your branch correctly!"
+        if: |
+          !startsWith(steps.extract_branch.outputs.branch, 'fix')
+          || !startsWith(steps.extract_branch.outputs.branch, 'feature')
+          || !startsWith(steps.extract_branch.outputs.branch, 'test')
+          || !startsWith(steps.extract_branch.outputs.branch, 'hotfix')
+      - name: Log Event Object
+        run: echo " ${{ github.event }} "
+      - name: Find Guilty Party
+        run: echo " ${{ github.event.pusher }} "
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
