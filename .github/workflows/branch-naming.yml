@@ -29,20 +29,40 @@ jobs:
           || !startsWith(steps.extract_branch.outputs.branch, 'feature')
           || !startsWith(steps.extract_branch.outputs.branch, 'test')
           || !startsWith(steps.extract_branch.outputs.branch, 'hotfix')
-      - name: Log Event Object
-        run: |
-          cat << OBJECT
-          ${{ toJson(github.event.commits.*.author.email) }}
-          OBJECT
-      - name: Find Guilty Party
-        run: | 
-          cat << OBJECT
-          ${{ toJson(github.event.pusher.email) }}
-          OBJECT
       - name: Log Environment Variables
         run: |
           echo "Author is $AUTHOR_EMAIL"
           echo "Pusher is $PUSHER_EMAIL"
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # Required mail server address:
+          server_address: mail.meg.codes
+          # Required mail server port:
+          server_port: 465
+          # Optional (recommended): mail server username:
+          username: ${{secrets.MAIL_USERNAME_TEST}}
+          # Optional (recommended) mail server password:
+          password: ${{secrets.MAIL_PASSWORD_TEST}}
+          # Required mail subject:
+          subject: Your Branch Name Needs Attention
+          # Required recipients' addresses:
+          to: ${{env.AUTHOR_EMAIL}}
+          # Required sender full name (address can be skipped):
+          from: Evereve Codebase # <user@example.com>
+          # Optional whether this connection use TLS (default is true if server_port is 465)
+          secure: true
+          # Optional plain body:
+          body: You gotta fix your branch name. The name ${{ steps.extract_branch.outputs.branch }} is bad.
+          # Optional carbon copy recipients:
+          cc: megan.martinson@evereve.com
+          # Optional unsigned/invalid certificates allowance:
+          ignore_cert: true
+          # Optional converting Markdown to HTML (set content_type to text/html too):
+          convert_markdown: true
+      - name: List files in the repository
+        run: |
+          ls -al ${{ github.workspace }}
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
