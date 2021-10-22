@@ -27,9 +27,15 @@ jobs:
           || !startsWith(steps.extract_branch.outputs.branch, 'test')
           || !startsWith(steps.extract_branch.outputs.branch, 'hotfix')
       - name: Log Event Object
-        run: echo " ${{ github.event }} "
+        run: |
+          cat << OBJECT
+          ${{ toJson(github.event) }}
+          OBJECT
       - name: Find Guilty Party
-        run: echo " ${{ github.event.pusher }} "
+        run: | 
+          cat << OBJECT
+          ${{ toJson(github.event.pusher) }}
+          OBJECT
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
