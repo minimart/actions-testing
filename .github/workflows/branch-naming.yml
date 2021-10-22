@@ -8,7 +8,8 @@ jobs:
         uses: actions/checkout@master
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Checking branch name syntax
-        run: echo "Running on branch $GITHUB_REF
+        shell: bash
+        run: echo "Running on branch $GITHUB_REF"
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
