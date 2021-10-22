@@ -9,7 +9,7 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Checking branch name syntax
         shell: bash
-        run: echo "Running on branch ${GITHUB_REF##*/} "
+        run: echo "Running on branch ${GITHUB_REF#refs/heads/} "
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
