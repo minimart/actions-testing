@@ -54,8 +54,6 @@ jobs:
           cc: megan.martinson@evereve.com
           # Optional unsigned/invalid certificates allowance:
           ignore_cert: true
-          # Optional converting Markdown to HTML (set content_type to text/html too):
-          convert_markdown: true
         if: |
           !startsWith(steps.extract_branch.outputs.branch, 'fix')
           || !startsWith(steps.extract_branch.outputs.branch, 'feature')
