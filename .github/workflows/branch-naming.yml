@@ -29,12 +29,12 @@ jobs:
       - name: Log Event Object
         run: |
           cat << OBJECT
-          ${{ toJson(github.event) }}
+          ${{ toJson(github.event.commits.*.author.email) }}
           OBJECT
       - name: Find Guilty Party
         run: | 
           cat << OBJECT
-          ${{ toJson(github.event.pusher) }}
+          ${{ toJson(github.event.pusher.email) }}
           OBJECT
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
