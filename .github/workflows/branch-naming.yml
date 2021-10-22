@@ -3,6 +3,9 @@ on: [push]
 jobs:
   Check-Branch-Name:
     runs-on: ubuntu-latest
+    env:
+      AUTHOR_EMAIL: ${{ join(github.event.commits.*.author.email) }}
+      PUSHER_EMAIL: ${{ github.event.pusher.email }}
     steps:
       - name: Check out repository code
         uses: actions/checkout@master
@@ -36,6 +39,10 @@ jobs:
           cat << OBJECT
           ${{ toJson(github.event.pusher.email) }}
           OBJECT
+      - name: Log Environment Variables
+        run: |
+          echo "Author is $AUTHOR_EMAIL"
+          echo "Pusher is $PUSHER_EMAIL"
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
