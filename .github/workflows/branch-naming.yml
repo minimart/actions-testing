@@ -19,6 +19,11 @@ jobs:
           || startsWith(steps.extract_branch.outputs.branch, 'feature')
           || startsWith(steps.extract_branch.outputs.branch, 'test')
           || startsWith(steps.extract_branch.outputs.branch, 'hotfix')
+      - name: Check Branch Name Prefix No Conditions
+        run: echo "FIX? ${{ startsWith(steps.extract_branch.outputs.branch, 'fix') }} "
+      - run: echo "FEATURE? ${{ startsWith(steps.extract_branch.outputs.branch, 'feature') }} "
+      - run: echo "TEST? ${{ startsWith(steps.extract_branch.outputs.branch, 'test') }} "
+      - run: echo "HOTFIX? ${{ startsWith(steps.extract_branch.outputs.branch, 'hotfix') }} "
       - name: End Job Status
         run: echo "🍏 This job's status is ${{ job.status }}."
         
