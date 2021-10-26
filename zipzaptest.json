@@ -1,0 +1,1734 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 6
+  },
+  "type": "character",
+  "name": "ZipZap Vesker",
+  "description": "Background: Union Busted \nTheme: Outlaw",
+  "gender": "N",
+  "homeworld": "Vesk Prime",
+  "deity": "Weydan",
+  "alignment": "Chaotic Good",
+  "quickNotes": "Background: Union Busted",
+  "languages": "Common, Ysoki, Vesk, Lashunta , Kasatha , Akitonian ",
+  "campaignNotes": "I went to prison for a small misunderstanding about the authenticity of a device I sold to a Vesk Associate Quartermaster (or high up position).\n\n Inside, I met a small group of union organizers serving their time, including Shan, who told me all about the injustices they had faced. \n\nMy \"underworld contacts\" are all union organizers from various corps. \n\n When we later met at Abadar Corp, Shan and I hit it off again becoming good friends. While I admired Shan and how hard they worked trying to organize the other workers, I did not want to return to prison and held back.\n\nMy deepest regret is not helping Shan more.",
+  "situationalBonuses": [
+    {
+      "bonus": "Reduce the DC of Culture checks to recall knowledge about the criminal underworld by 5.",
+      "source": "Theme Knowledge (Outlaw)"
+    }
+  ],
+  "conditions": {
+    "asleep": {
+      "active": false,
+      "notes": ""
+    },
+    "bleeding": {
+      "active": false,
+      "notes": ""
+    },
+    "blinded": {
+      "active": false,
+      "notes": ""
+    },
+    "broken": {
+      "active": false,
+      "notes": ""
+    },
+    "burning": {
+      "active": false,
+      "notes": ""
+    },
+    "confused": {
+      "active": false,
+      "notes": ""
+    },
+    "cowering": {
+      "active": false,
+      "notes": ""
+    },
+    "dazed": {
+      "active": false,
+      "notes": ""
+    },
+    "dazzled": {
+      "active": false,
+      "notes": ""
+    },
+    "dead": {
+      "active": false,
+      "notes": ""
+    },
+    "deafened": {
+      "active": false,
+      "notes": ""
+    },
+    "dying": {
+      "active": false,
+      "notes": ""
+    },
+    "encumbered": {
+      "active": false,
+      "notes": ""
+    },
+    "entangled": {
+      "active": false,
+      "notes": ""
+    },
+    "exhausted": {
+      "active": false,
+      "notes": ""
+    },
+    "fascinated": {
+      "active": false,
+      "notes": ""
+    },
+    "fatigued": {
+      "active": false,
+      "notes": ""
+    },
+    "flatFooted": {
+      "active": false,
+      "notes": ""
+    },
+    "frightened": {
+      "active": false,
+      "notes": ""
+    },
+    "grappled": {
+      "active": false,
+      "notes": ""
+    },
+    "helpless": {
+      "active": false,
+      "notes": ""
+    },
+    "nauseated": {
+      "active": false,
+      "notes": ""
+    },
+    "offKilter": {
+      "active": false,
+      "notes": ""
+    },
+    "offTarget": {
+      "active": false,
+      "notes": ""
+    },
+    "overburdened": {
+      "active": false,
+      "notes": ""
+    },
+    "panicked": {
+      "active": false,
+      "notes": ""
+    },
+    "paralyzed": {
+      "active": false,
+      "notes": ""
+    },
+    "pinned": {
+      "active": false,
+      "notes": ""
+    },
+    "prone": {
+      "active": false,
+      "notes": ""
+    },
+    "shaken": {
+      "active": false,
+      "notes": ""
+    },
+    "sickened": {
+      "active": false,
+      "notes": ""
+    },
+    "stable": {
+      "active": false,
+      "notes": ""
+    },
+    "staggered": {
+      "active": false,
+      "notes": ""
+    },
+    "stunned": {
+      "active": false,
+      "notes": ""
+    },
+    "unconscious": {
+      "active": false,
+      "notes": ""
+    }
+  },
+  "negativeLevels": {
+    "permanent": 0,
+    "temporary": 0
+  },
+  "afflictions": [],
+  "abilityScores": {
+    "strength": {
+      "total": 8,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 0,
+      "damage": 0,
+      "scoreBonuses": [
+        {
+          "value": -2,
+          "type": "Racial",
+          "source": "Ysoki"
+        }
+      ],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "dexterity": {
+      "total": 18,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 5,
+      "damage": 0,
+      "scoreBonuses": [
+        {
+          "value": 1,
+          "type": "Theme",
+          "source": "Theme Knowledge (Outlaw)"
+        },
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Ysoki"
+        }
+      ],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "constitution": {
+      "total": 12,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 2,
+      "damage": 0,
+      "scoreBonuses": [],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "intelligence": {
+      "total": 14,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 2,
+      "damage": 0,
+      "scoreBonuses": [
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Ysoki"
+        }
+      ],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "wisdom": {
+      "total": 10,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 0,
+      "damage": 0,
+      "scoreBonuses": [],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "charisma": {
+      "total": 11,
+      "base": null,
+      "override": null,
+      "increases": 0,
+      "pointBuy": 1,
+      "damage": 0,
+      "scoreBonuses": [],
+      "modifierBonuses": [],
+      "notes": ""
+    },
+    "increases": [],
+    "method": "Point Buy"
+  },
+  "skills": [
+    {
+      "total": 8,
+      "override": null,
+      "skill": "Acrobatics",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Dexterity",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 3,
+      "override": null,
+      "skill": "Athletics",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Strength",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 4,
+      "override": null,
+      "skill": "Bluff",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Charisma",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 6,
+      "override": null,
+      "skill": "Computers",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 6,
+      "override": null,
+      "skill": "Culture",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 4,
+      "override": null,
+      "skill": "Diplomacy",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Charisma",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 0,
+      "override": null,
+      "skill": "Disguise",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Charisma",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 8,
+      "override": null,
+      "skill": "Engineering",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Scrounger (Ysoki)"
+        }
+      ],
+      "ability": "Intelligence",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 0,
+      "override": null,
+      "skill": "Intimidate",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Charisma",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 2,
+      "override": null,
+      "skill": "Life Science",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": false,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 2,
+      "override": null,
+      "skill": "Medicine",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 0,
+      "override": null,
+      "skill": "Mysticism",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Wisdom",
+      "classSkill": false,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 4,
+      "override": null,
+      "skill": "Perception",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Wisdom",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 2,
+      "override": null,
+      "skill": "Physical Science",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": false,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 4,
+      "override": null,
+      "skill": "Piloting",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Dexterity",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 4,
+      "override": null,
+      "skill": "Sense Motive",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [],
+      "ability": "Wisdom",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 9,
+      "override": null,
+      "skill": "Sleight of Hand",
+      "name": null,
+      "ranks": 1,
+      "bonuses": [
+        {
+          "value": 1,
+          "type": "Misc",
+          "source": "Theme Knowledge (Outlaw)"
+        }
+      ],
+      "ability": "Dexterity",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    },
+    {
+      "total": 6,
+      "override": null,
+      "skill": "Stealth",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Scrounger (Ysoki)"
+        }
+      ],
+      "ability": "Dexterity",
+      "classSkill": true,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 2,
+      "override": null,
+      "skill": "Survival",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Scrounger (Ysoki)"
+        }
+      ],
+      "ability": "Wisdom",
+      "classSkill": false,
+      "trainedOnly": false,
+      "notes": ""
+    },
+    {
+      "total": 2,
+      "override": null,
+      "skill": "Profession",
+      "name": null,
+      "ranks": 0,
+      "bonuses": [],
+      "ability": "Intelligence",
+      "classSkill": true,
+      "trainedOnly": true,
+      "notes": ""
+    }
+  ],
+  "vitals": {
+    "temporary": 0,
+    "stamina": {
+      "max": 7,
+      "override": null,
+      "damage": 0,
+      "bonuses": [
+        {
+          "value": 1,
+          "type": "Misc",
+          "source": "Constitution"
+        },
+        {
+          "value": 6,
+          "type": "Misc",
+          "source": "Envoy"
+        }
+      ],
+      "notes": ""
+    },
+    "health": {
+      "max": 10,
+      "override": null,
+      "damage": 0,
+      "bonuses": [
+        {
+          "value": 2,
+          "type": "Misc",
+          "source": "Ysoki"
+        },
+        {
+          "value": 6,
+          "type": "Misc",
+          "source": "Envoy"
+        },
+        {
+          "value": 2,
+          "type": "Racial",
+          "source": "Scrappy (Ysoki)"
+        }
+      ],
+      "notes": ""
+    },
+    "resolve": {
+      "max": 1,
+      "override": null,
+      "damage": 0,
+      "bonuses": [
+        {
+          "value": 1,
+          "type": "Misc",
+          "source": "Level"
+        },
+        {
+          "value": 0,
+          "type": "Misc",
+          "source": "Key Ability Score (Charisma, Envoy)"
+        }
+      ],
+      "notes": ""
+    }
+  },
+  "speed": {
+    "notes": "",
+    "land": 30
+  },
+  "initiative": {
+    "total": 4,
+    "bonuses": [],
+    "notes": ""
+  },
+  "armorClass": {
+    "eac": {
+      "total": 15,
+      "override": null,
+      "bonuses": [],
+      "notes": ""
+    },
+    "kac": {
+      "total": 15,
+      "override": null,
+      "bonuses": [],
+      "notes": ""
+    },
+    "acVsCombatManeuver": {
+      "total": 23,
+      "override": null,
+      "bonuses": [],
+      "notes": ""
+    }
+  },
+  "resistances": {
+    "dr": {},
+    "er": {}
+  },
+  "saves": {
+    "fortitude": {
+      "total": 1,
+      "override": null,
+      "base": 0,
+      "bonuses": [],
+      "ability": "Constitution",
+      "notes": ""
+    },
+    "reflex": {
+      "total": 6,
+      "override": null,
+      "base": 2,
+      "bonuses": [],
+      "ability": "Dexterity",
+      "notes": ""
+    },
+    "will": {
+      "total": 2,
+      "override": null,
+      "base": 2,
+      "bonuses": [],
+      "ability": "Wisdom",
+      "notes": ""
+    }
+  },
+  "attackBonuses": {
+    "bab": {
+      "total": 0,
+      "base": 0,
+      "notes": ""
+    },
+    "melee": {
+      "total": -1,
+      "override": null,
+      "ability": "Strength",
+      "bonuses": [],
+      "notes": ""
+    },
+    "ranged": {
+      "total": 4,
+      "override": null,
+      "ability": "Dexterity",
+      "bonuses": [],
+      "notes": ""
+    },
+    "thrown": {
+      "total": -1,
+      "override": null,
+      "ability": "Strength",
+      "bonuses": [],
+      "notes": ""
+    },
+    "otherBonuses": []
+  },
+  "race": {
+    "name": "Ysoki",
+    "description": "Small and furtive, the ysoki are often overlooked by larger races. Yet through wit and technological prowess, they’ve spread throughout the Solar system, giving truth to the old adage that every starship needs a few rats.",
+    "size": "Small",
+    "hitPoints": 2,
+    "selectedTraits": [
+      {
+        "name": "Cheek Pouches",
+        "description": "Ysoki can store up to 1 cubic foot of items weighing up to 1 bulk in total in their cheek pouches, and they can transfer a single object between hand and cheek as a swift action. A ysoki can disgorge the entire contents of his pouch onto the ground in his square as a move action that does not provoke an attack of opportunity.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Darkvision",
+        "description": "Ysoki can see up to 60 feet in the dark.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Scrounger",
+        "description": "Ysoki receive a +2 racial bonus to Engineering, Stealth, and Survival checks.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Scrappy",
+        "description": "Many ysoki are capable of taking and dealing surprising amounts of damage. A ysoki with this trait gains 4 racial Hit Points at 1st level instead of 2. In addition, while the ysoki has 0 Stamina Points, they gain a +1 insight bonus to melee attack rolls. This replaces moxie.",
+        "selectedOptions": null
+      }
+    ],
+    "abilityAdjustment": {
+      "name": "Standard",
+      "description": "Base Ability Adjustment",
+      "adjustment": [
+        "+2 dex",
+        "+2 int",
+        "-2 str"
+      ]
+    },
+    "speed": {
+      "land": 30
+    },
+    "reference": {
+      "name": "Core Rulebook",
+      "shortName": "CRB",
+      "page": 54
+    }
+  },
+  "theme": {
+    "name": "Outlaw",
+    "bonus": "+1 dex",
+    "description": "Due to the sins of your past or your current unlawful behavior, you are a wanted individual somewhere in the Pact Worlds. You might not even be guilty and are striving to clear your good name. Or you might fully admit to being a criminal but believe the laws you break are unjust. Whatever the case, boarding a starship headed to the Vast might be just the thing you need until the heat dies down — or until you’re dragged off to prison.",
+    "benefits": [
+      {
+        "name": "Theme Knowledge",
+        "level": 1,
+        "description": "You are well connected to shadowy secrets and back-alley deals, and you both know about key players and have handy skills of your own. Reduce the DC of Culture checks to recall knowledge about the criminal underworld by 5. Sleight of Hand is a class skill for you, though if it is a class skill from the class you take at 1st level, you instead gain a +1 bonus to Sleight of Hand checks. In addition, you gain an ability adjustment of +1 to Dexterity at character creation.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Legal Corruption",
+        "level": 6,
+        "description": "Your underworld contacts have serious pull with the corporations and the authorities and can get you out of just about any legal trouble—as long as you’re willing to pay the right price. Depending on the severity of the crime, this can be anywhere between 500 credits × your character level and 10,000 credits × your character level.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Black Market Connections",
+        "level": 12,
+        "description": "ou have contacts who can move goods of all manner discreetly and quietly just about anywhere to nearly any destination you can imagine. You can sell goods in any city for their usual price, even if the goods are illegal or too luxurious for the locals to afford. Additionally, for 10% more than the usual price, you can purchase goods to be delivered to a remote drop-off point (possibly near an adventure location) in the same solar system as a familiar city. The delivery always takes at least as long as the journey between the city and the drop-off point—and usually longer.",
+        "selectedOptions": null
+      },
+      {
+        "name": "Master Outlaw",
+        "level": 18,
+        "description": "Organizing shady plans is one of your specialties, and doing so is like a sweet shot of adrenaline. Up to twice per day, after you spend at least 10 minutes to plan a significant heist, caper, or other crime (this doesn’t count as resting to regain Stamina Points) and successfully complete at least one action toward enacting that plan, you regain 1 Resolve Point.",
+        "selectedOptions": null
+      }
+    ],
+    "reference": {
+      "name": "Core Rulebook",
+      "shortName": "CRB",
+      "page": 33
+    }
+  },
+  "classes": [
+    {
+      "name": "Envoy",
+      "description": "You make your way in the universe with a charming smile, quick wit, and keen sense of self-preservation, and excel at getting others to do what you want. You might be a trickster, hustler, or con artist, or you might serve as an actor, ambassador, or businessperson, paving the way for negotiation through kind words or the occasional dirty trick. You are often the group’s strategist, using your quick wit and tactical acumen to push your friends to greater heights. You may also be skilled in diplomacy, serving as the face for a starship crew, talking your way into restricted systems or gaining audiences with local politicians or warlords.",
+      "baseHitPoints": 6,
+      "baseStaminaPoints": 6,
+      "baseSkillRanksPerLevel": 8,
+      "keyAbility": "Charisma",
+      "levels": 1,
+      "spells": [],
+      "spellsUsed": [],
+      "spellsKnown": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "spellsPerDay": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "baseAttackBonus": 0,
+      "savingThrows": {
+        "fortitude": 0,
+        "reflex": 2,
+        "will": 2
+      },
+      "classSkills": [
+        "Acrobatics",
+        "Athletics",
+        "Bluff",
+        "Computers",
+        "Culture",
+        "Diplomacy",
+        "Disguise",
+        "Engineering",
+        "Intimidate",
+        "Medicine",
+        "Perception",
+        "Piloting",
+        "Profession",
+        "Sense Motive",
+        "Sleight of Hand",
+        "Stealth"
+      ],
+      "features": [
+        {
+          "name": "Envoy Improvisation",
+          "description": "As you gain experience, you learn envoy improvisations—little tricks that bolster allies, confound enemies, or change the ebb and flow of battle using guile, inspiration, or luck. If an improvisation allows you to grant an effect to an ally, you cannot grant yourself that effect unless the improvisation states otherwise. If an envoy improvisation allows a saving throw to resist its effects, the DC is equal to 10 + half your envoy level + your Charisma modifier. Some envoy improvisations are language-dependent, mind-affecting, sense-dependent, or some combination of any or all of these. ",
+          "options": [
+            {
+              "name": "Inspiring Boost [Language-Dependent] [Mind-Affecting] [Sense-Dependent]",
+              "description": "As a standard action, you can signal an ally within 30 feet who has taken damage from any attack made by a significant enemy (see page 242) at any point after your last turn ended. That ally regains a number of Stamina Points (up to his maximum) equal to twice your envoy level + your Charisma modifier; at 15th level, this increases to three times your envoy level + your Charisma modifier. Once an ally has benefited from your inspiring boost, that ally can’t gain the benefits of your inspiring boost again until he takes a 10-minute rest to recover Stamina Points. At 6th level, you can spend 1 Resolve Point to add your envoy level to the number of Stamina Points regained."
+            }
+          ]
+        },
+        {
+          "name": "Expertise",
+          "description": "You are an expert at dealing with challenges that test your skills, be the challenges social or otherwise. At 1st level, when attempting a Sense Motive check, you can roll 1d6 (your expertise die) and add the result of the roll to your check as an insight bonus. You can use this and other expertise abilities as long as you have at least 1 Resolve Point remaining. At 5th level, anytime you roll your expertise die, you gain a +1 bonus to the result. At 9th, 17th, and 20th levels, this bonus increases by 1. At 13th level, you roll 1d8 as your expertise die instead of 1d6. Beginning at 9th level, you have even greater expertise with skills to which you can add your expertise die that you have also selected with the Skill Focus feat. For each such skill, once per day when rolling your expertise die to add to that skill, you may roll the expertise die twice and take the better of the two results.\n\n| Level | 1 | 5 | 9 | 13 | 17 | 20 |\n| --- | --- | --- | --- | --- | --- | --- |\n| Bonus | 1d6 | 1d6 + 1 | 1d6 + 2 | 1d8 + 2 | 1d8 + 3 | 1d8 + 4 |",
+          "options": []
+        },
+        {
+          "name": "Skill Expertise",
+          "description": "At 1st level and every 4 levels thereafter, you can use expertise with one additional class skill. You must have at least 1 rank in a skill to select it.",
+          "options": [
+            {
+              "name": "Diplomacy",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Tech Whisperer",
+          "description": "You have an empathic connection to technological devices. You gain an expertise die of the same value as that granted to an envoy of your level by the expertise class feature. Choose one of the following skills: Bluff, Computers, Diplomacy, Engineering, or Intimidate. At 1st level, you can add your expertise die to skill checks using the chosen skill. At 6th level and every 5 levels thereafter, you can use expertise with one additional skill from the list.\n\nAll of your mind-affecting envoy improvisations can affect constructs, robots, and other creatures that have the technological subtype, even if they’re mindless or normally immune to such effects. However, these creatures receive a +2 bonus to their Will saves against your mind‑affecting improvisations.\n\nAt 5th level, you can communicate with technological machines (including nonsentient devices) in rudimentary ways as well as understand in vague terms the information they try to convey to you; this information usually consists of simple terms, such as “no entry” or “need energy,” or basic operating prompts, like “speak name” or “need keycard and password.” This allows you to use Bluff, Diplomacy, or Intimidate in place of Engineering to identify technology, so long as you can communicate with it.\n\nAt 9th level, you can attempt Diplomacy and Intimidate checks to influence such machines, though the DC of this check is 15 + 1-1/2 the device’s item level, further modified by the item’s initial attitude for Diplomacy checks. Most machines are indifferent, though some (particularly security systems) might be unfriendly or even hostile. You gain a +2 circumstance bonus to affect friendly machines with Computers or Engineering checks, and the bonus increases to +4 for helpful machines. At the GM’s discretion, helpful devices might perform simple favors for you. By contrast, a device made hostile by you might activate countermeasures, such as setting off alarms.\n\nThis isn’t a language-dependent or sense-dependent ability, but you must have physical contact with a machine that isn’t able to perceive you.\n\nThis feature alters expertise and skill expertise.",
+          "options": []
+        }
+      ],
+      "archetype": null
+    }
+  ],
+  "feats": {
+    "acquiredFeats": [
+      {
+        "name": "Intuit Relationships",
+        "description": "You can quickly sense relationships between others and use that knowledge to manipulate them.",
+        "prerequisite": "Perception 1 rank, Sense Motive 1 rank.",
+        "benefit": "After 1 minute or more of interaction with or observation of two or more creatures, you can attempt a Sense Motive check to intuit the relationship between or among those creatures. If you don’t understand the language they are speaking, you take a –5 penalty to the check. The DC is equal to 10 + the highest Bluff skill bonus among the creatures or 15 + 1-1/2 × the highest CR among the creatures, whichever is higher. If you succeed at this check by 5 or more, for the next hour, you gain a +2 circumstance bonus to Bluff, Diplomacy, and Intimidate checks against the creatures when you use their relationship as part of the interaction. The GM decides if the bonus applies. If you fail the check, you can’t attempt to use this benefit on the same creatures again until you gain another rank in Sense Motive.",
+        "benefitEffect": null,
+        "normal": null,
+        "special": null,
+        "isCombatFeat": false,
+        "selectedOptions": null,
+        "reference": {
+          "name": "The Threefold Conspiracy: The Chimera Mystery",
+          "shortName": "TC-TCM",
+          "page": 44
+        }
+      }
+    ],
+    "notes": ""
+  },
+  "inventory": [
+    {
+      "type": "Weapon",
+      "id": "Unarmed Strike",
+      "name": "Unarmed Strike",
+      "description": "An unarmed strike can be dealt with any limb or appendage. Unarmed strikes deal nonlethal damage, and the damage from an unarmed strike is considered weapon damage for the purposes of effects that give you a bonus to weapon damage rolls.",
+      "level": 0,
+      "price": 0,
+      "bulk": 0,
+      "weaponType": "Basic Melee",
+      "handedness": 1,
+      "category": null,
+      "toHit": -1,
+      "damage": {
+        "dice": {
+          "count": 1,
+          "sides": 3
+        },
+        "damage": [
+          "B"
+        ],
+        "alternateDamage": null
+      },
+      "damageBonus": -1,
+      "critical": null,
+      "special": [
+        {
+          "name": "Archaic",
+          "additionalInfo": null
+        },
+        {
+          "name": "Nonlethal",
+          "additionalInfo": null
+        }
+      ],
+      "range": null,
+      "capacity": null,
+      "ammunitionType": null,
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 171
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Armor",
+      "id": "1337735104",
+      "isEquipped": true,
+      "stashed": false,
+      "upgradeIds": [],
+      "notes": "",
+      "name": "EJ Coverall, Utility",
+      "description": "When a task requires skillful work in a harsh environment with no tolerance for a flimsy space suit, the EJ utility suit is the answer. Flexible and durable, this coverall provides protection and comfort, and with room for upgrades, it’s adaptable to a variety of jobs.",
+      "level": 1,
+      "price": 230,
+      "bulk": 0.1,
+      "eacBonus": 1,
+      "kacBonus": 1,
+      "maxDexBonus": 4,
+      "armorCheckPenalty": 0,
+      "speedAdjustment": 0,
+      "upgradeSlots": 2,
+      "armorType": "Light",
+      "reference": {
+        "name": "Fly Free or Die: We’re No Heroes",
+        "shortName": "FFOD-WNH",
+        "page": 44
+      }
+    },
+    {
+      "type": "Weapon",
+      "id": "2140866464",
+      "name": "Knife, Survival",
+      "description": "These light blades can be used for both mundane tasks and combat. A typical survival knife has a fixed, single-edged, carbonsteel or ceramic blade and is treated against corrosion. Tactical knives have large, double-edged blades, often with a section of serrated blade near the haft, and they come in both fixed- and folding-blade designs; users may prefer one style or the other, but the two are identical in terms of price, weight, and damage dealt.",
+      "level": 1,
+      "price": 95,
+      "bulk": 0.1,
+      "weaponType": "Basic Melee",
+      "handedness": 1,
+      "category": null,
+      "toHit": 4,
+      "damage": {
+        "dice": {
+          "count": 1,
+          "sides": 4
+        },
+        "damage": [
+          "S"
+        ],
+        "alternateDamage": []
+      },
+      "damageBonus": -1,
+      "critical": null,
+      "special": [
+        {
+          "name": "Analog",
+          "additionalInfo": null
+        },
+        {
+          "name": "Operative",
+          "additionalInfo": null
+        },
+        {
+          "name": "Thrown",
+          "additionalInfo": "(20 ft.)"
+        }
+      ],
+      "range": null,
+      "capacity": null,
+      "ammunitionType": null,
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 171
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "93232072",
+      "name": "Dye Grenade I",
+      "description": "Lumocantha dye can be weaponized easily. A creature that fails its Reflex saving throw against a dye grenade takes additional damage from laser weapons equal to half the dye grenade’s item level (minimum 1). This lasts until the dye is removed, usually by changing armor or clothing or by spending 1d4 hours cleaning off the stain.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 1,
+      "category": "Uncategorized",
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d4 A, dye-stained, 10 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": null,
+      "ammunitionType": null,
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Alien Archive 4",
+        "shortName": "AA4",
+        "page": 69
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "503502042",
+      "name": "Dye Grenade I",
+      "description": "Lumocantha dye can be weaponized easily. A creature that fails its Reflex saving throw against a dye grenade takes additional damage from laser weapons equal to half the dye grenade’s item level (minimum 1). This lasts until the dye is removed, usually by changing armor or clothing or by spending 1d4 hours cleaning off the stain.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 1,
+      "category": "Uncategorized",
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d4 A, dye-stained, 10 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": null,
+      "ammunitionType": null,
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Alien Archive 4",
+        "shortName": "AA4",
+        "page": 69
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "1265918691",
+      "name": "Smoke Grenade",
+      "description": "A smoke grenade deals no damage; instead, it releases a cloud of dense smoke. Each character who inhales smoke must succeed at a Fortitude saving throw each round (DC = 15 + 1 per previous check) or spend that round choking and coughing; he can do nothing else. A character who chokes for 2 consecutive rounds takes 1d6 nonlethal damage. (Active environmental protection from a suit of armor prevents this effect altogether.) Regardless of the armor a character wears, smoke obscures vision, providing concealment.",
+      "level": 1,
+      "price": 40,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(smoke cloud 1 minute; 20 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "2112839224",
+      "name": "Smoke Grenade",
+      "description": "A smoke grenade deals no damage; instead, it releases a cloud of dense smoke. Each character who inhales smoke must succeed at a Fortitude saving throw each round (DC = 15 + 1 per previous check) or spend that round choking and coughing; he can do nothing else. A character who chokes for 2 consecutive rounds takes 1d6 nonlethal damage. (Active environmental protection from a suit of armor prevents this effect altogether.) Regardless of the armor a character wears, smoke obscures vision, providing concealment.",
+      "level": 1,
+      "price": 40,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(smoke cloud 1 minute; 20 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "1774704328",
+      "name": "Shock Grenade I",
+      "description": "A shock grenade releases a pulse of electrical energy on impact.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d8 E; 15 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "168045161",
+      "name": "Shock Grenade I",
+      "description": "A shock grenade releases a pulse of electrical energy on impact.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d8 E; 15 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "150033445",
+      "name": "Frag Grenade I",
+      "description": "A fragmentary, or frag, grenade explodes in a cloud of shrapnel.",
+      "level": 1,
+      "price": 35,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d6 P; 15 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "1571666840",
+      "name": "Frag Grenade I",
+      "description": "A fragmentary, or frag, grenade explodes in a cloud of shrapnel.",
+      "level": 1,
+      "price": 35,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d6 P; 15 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "957806949",
+      "name": "Concussion Grenade, Mk 1",
+      "description": "The powerful blast from a concussion grenade causes a small shockwave that blasts creatures off their feet. Creatures that fail their save against a concussion grenade are knocked prone. A flying creature caught in the blast is affected as if by the trip combat maneuver if it fails its save, descending 10 feet and becoming prone if this causes it to reach the ground. More advanced versions of this grenade explode so forcefully that they also inflict sonic damage. The grenade’s shockwave requires a gas or liquid medium, and this grenade has no effect in a vacuum.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(knockdown, 10 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Galaxy Exploration Manual",
+        "shortName": "GEM",
+        "page": 42
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "174621355",
+      "name": "Concussion Grenade, Mk 1",
+      "description": "The powerful blast from a concussion grenade causes a small shockwave that blasts creatures off their feet. Creatures that fail their save against a concussion grenade are knocked prone. A flying creature caught in the blast is affected as if by the trip combat maneuver if it fails its save, descending 10 feet and becoming prone if this causes it to reach the ground. More advanced versions of this grenade explode so forcefully that they also inflict sonic damage. The grenade’s shockwave requires a gas or liquid medium, and this grenade has no effect in a vacuum.",
+      "level": 1,
+      "price": 50,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(knockdown, 10 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Galaxy Exploration Manual",
+        "shortName": "GEM",
+        "page": 42
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Weapon",
+      "id": "1508071016",
+      "name": "Frag Grenade I",
+      "description": "A fragmentary, or frag, grenade explodes in a cloud of shrapnel.",
+      "level": 1,
+      "price": 35,
+      "bulk": 0.1,
+      "weaponType": "Grenade",
+      "handedness": 0,
+      "category": null,
+      "toHit": -1,
+      "damage": null,
+      "damageBonus": 0,
+      "critical": null,
+      "special": [
+        {
+          "name": "Explode",
+          "additionalInfo": "(1d6 P; 15 ft.)"
+        }
+      ],
+      "range": 20,
+      "capacity": 1,
+      "ammunitionType": "Drawn",
+      "ammunitionId": null,
+      "usage": null,
+      "accessoryIds": [],
+      "fusionIds": [],
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 178
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "proficient": true,
+      "specialization": false,
+      "notes": ""
+    },
+    {
+      "type": "Ammunition",
+      "id": "2066270605",
+      "name": "Battery, Standard",
+      "description": "Batteries charge powered weapons, but they can also be used to power an array of items, including powered armor and technological items. Batteries have a standardized size and weight, and items that take batteries all have a slot into which they fit, regardless of the item’s actual size. Weapons that use batteries list the highest-capacity battery they are capable of using as well as how many charges from the battery that each shot consumes.",
+      "level": 1,
+      "price": 60,
+      "bulk": 0,
+      "special": null,
+      "capacity": 20,
+      "ammunitionType": "Charge",
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 179
+      },
+      "used": 0,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "1648466827",
+      "name": "Comm Unit, Personal",
+      "description": "A personal comm unit is pocket-sized device that combines a minor portable computer (treat as a tier-0 computer with no upgrades or modules) and a cellular communication device, allowing wireless communication with other comm units in both audio- and text-based formats at planetary range (see page 272). A personal comm unit also includes a calculator, a flashlight (increases the light level one step in a 15-foot cone), and several entertainment options (including games and access to any local infospheres). You can upgrade a personal comm unit to function as some other devices (such as full computers and scanners) by spending credits equal to 110% of the additional device’s price.\n\nComm units that function at system-wide and unlimited ranges aren’t as portable; they include built-in generators that provide the necessary amount of power. Short-term use of these units can be purchased in most major settlements (see page 234).",
+      "level": 1,
+      "price": 7,
+      "bulk": 0.1,
+      "isEquippable": false,
+      "isConsumable": false,
+      "hands": 1,
+      "capacity": 80,
+      "usage": "1/hour",
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 219
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "1576710009",
+      "name": "Gear Maintenance Kit",
+      "description": "This kit contains tools to maintain most common equipment. It includes a canister of lubricating oil, several small drivers and wrenches, armor polish, an armor cleansing agent with a citrus aroma, and a UPB pen that can repair small cracks, dents, scuffs, and other signs of wear and tear in most types of gear. A UPB pen can hold 1 UPB, which is enough to repair cosmetic damage on any one item.",
+      "level": 1,
+      "price": 5,
+      "bulk": 0.1,
+      "isEquippable": false,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Armory",
+        "shortName": "ARM",
+        "page": 130
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "1856797308",
+      "name": "Rope (50 ft.)",
+      "description": "Synthetic rope is exceptionally durable, elastic, and specifically designed to be easy to grip and climb. Although it lacks the strength and durability of cable lines, synthetic rope is significantly cheaper and lighter than those alternatives.",
+      "level": 1,
+      "price": 1,
+      "bulk": 0.1,
+      "isEquippable": false,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Armory",
+        "shortName": "ARM",
+        "page": 131
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "613692671",
+      "name": "Umbrella, Standard",
+      "description": "Umbrellas are designed to keep you dry during rainstorms and other types of precipitation and provide you shade in sunlight or other bright light.\n\nA standard umbrella is made of plastic or synthetic fabric and requires one hand to use. ",
+      "level": 1,
+      "price": 2,
+      "bulk": 0.1,
+      "isEquippable": true,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Armory",
+        "shortName": "ARM",
+        "page": 131
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "187961069",
+      "name": "Lighter",
+      "description": "A lighter is a small canister containing a pressurized flammable liquid gas. When the lighter is activated, an electric arc ignites the gas, creating a tiny flame. You can light a small flame (such as a candle) as a swift action. Lighting a full fire is at least a full action or more, depending on the size and fuel of the fire.",
+      "level": 1,
+      "price": 1,
+      "bulk": 0,
+      "isEquippable": false,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Armory",
+        "shortName": "ARM",
+        "page": 130
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "33484040",
+      "name": "Portable Light, Flashlight",
+      "description": "A portable light, sometimes called an electric torch, is one of several different devices that use batteries to create light sources. A portable light increases the light level by one step in an area determined by its model, as follows: flashlight (20- foot cone), lantern (10-foot radius), beacon (50-foot radius), and spotlight (100-foot cone).",
+      "level": 1,
+      "price": 1,
+      "bulk": 0.1,
+      "isEquippable": true,
+      "isConsumable": false,
+      "hands": 1,
+      "capacity": 10,
+      "usage": "1/hour",
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 219
+      },
+      "isEquipped": true,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "415351680",
+      "name": "Hygiene Kit",
+      "description": "This kit contains all of the tools and products needed to practice good grooming and hygiene. Kits designed for specific races include supplies (such as scale-care products for vesk or antennae grooming for lashuntas or shirrens) that are of less use to other creatures.",
+      "level": 1,
+      "price": 3,
+      "bulk": 0.1,
+      "isEquippable": false,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 231
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "574362410",
+      "name": "Energel Food Pellet",
+      "description": "Energel food pellets are easy-to-swallow meals in pill form, capable of staving off starvation, though they lack the appropriate nutrient profile needed for long-term sustenance. You can substitute one pack of food pellets for a day’s food. If you’re already starving when you consume energel food pellets, you automatically succeed at your Constitution check to avoid nonlethal damage that day, but the effects of starvation resume the following day. You cannot benefit from consuming more than two packs of energel food pellets per week.",
+      "level": 1,
+      "price": 5,
+      "bulk": 0,
+      "isEquippable": false,
+      "isConsumable": true,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Galaxy Exploration Manual",
+        "shortName": "GEM",
+        "page": 40
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "1356587333",
+      "name": "Energel Food Pellet",
+      "description": "Energel food pellets are easy-to-swallow meals in pill form, capable of staving off starvation, though they lack the appropriate nutrient profile needed for long-term sustenance. You can substitute one pack of food pellets for a day’s food. If you’re already starving when you consume energel food pellets, you automatically succeed at your Constitution check to avoid nonlethal damage that day, but the effects of starvation resume the following day. You cannot benefit from consuming more than two packs of energel food pellets per week.",
+      "level": 1,
+      "price": 5,
+      "bulk": 0,
+      "isEquippable": false,
+      "isConsumable": true,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Galaxy Exploration Manual",
+        "shortName": "GEM",
+        "page": 40
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "239842427",
+      "name": "Clothing, Party",
+      "description": "Clothing is mass produced throughout the Pact Worlds, and the residents of the system are never wanting for clothes. Clothing is often worn both under and over armor, and its benefits apply in nearly all situations. Clothing comes in several varieties based upon its intended purpose, as described below.\n\nParty clothes are usually designed for occasions where everyday or professional wear won’t do but where formal wear is too fancy. Usually, party wear takes the form of special costumes or unusual dress that one must wear to avoid looking out of place at the engagement. Lacking the proper party wear at a social event can cause you to take a penalty of up to –4 to Bluff, Diplomacy, and Disguise checks at the function, as determined by the GM.",
+      "level": 1,
+      "price": 5,
+      "bulk": 0.1,
+      "isEquippable": true,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Armory",
+        "shortName": "ARM",
+        "page": 129
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    },
+    {
+      "type": "Item",
+      "id": "1712428090",
+      "name": "Clothing, Professional",
+      "description": "Clothing is mass produced throughout the Pact Worlds, and the residents of the system are never wanting for clothes. Clothing is often worn both under and over armor, and its benefits apply in nearly all situations. Clothing comes in several varieties based upon its intended purpose, as described below.\n\nEach set of professional wear is tailored to the tasks of a specific Profession skill and accommodates the needs of its wearer while also conveying an air of expertise and professionalism. You gain a +1 circumstance bonus to Profession checks to earn a living while wearing an appropriate professional outfit.",
+      "level": 1,
+      "price": 5,
+      "bulk": 0.1,
+      "isEquippable": true,
+      "isConsumable": false,
+      "hands": null,
+      "capacity": null,
+      "usage": null,
+      "itemType": "Personal",
+      "selectedOptions": null,
+      "reference": {
+        "name": "Core Rulebook",
+        "shortName": "CRB",
+        "page": 230
+      },
+      "isEquipped": false,
+      "stashed": false,
+      "notes": ""
+    }
+  ],
+  "bulk": {
+    "current": {
+      "total": 2,
+      "override": null,
+      "notes": ""
+    },
+    "encumbered": {
+      "limit": 4
+    },
+    "overburdened": {
+      "limit": 8,
+      "override": null,
+      "notes": ""
+    }
+  },
+  "credits": 90,
+  "upbs": 0,
+  "drone": null
+}
