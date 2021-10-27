@@ -15,6 +15,8 @@ jobs:
         run: echo "Running on branch ${GITHUB_REF#refs/heads/} "
       - run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
+      - name: Read multiple emails
+        run: echo ${{ env.AUTHOR_EMAIL }}, ${{ env.PUSHER_EMAIL }}
       - name: Check If Main
         id: branch_not_main
         run: echo "This is not the main branch!"
@@ -28,38 +30,11 @@ jobs:
           || startsWith(steps.extract_branch.outputs.branch, 'feature')
           || startsWith(steps.extract_branch.outputs.branch, 'test')
           || startsWith(steps.extract_branch.outputs.branch, 'hotfix')
-      - name: Check Branch Name Prefix Failure
-        id: branch_prefix_failure
-        run: echo " 🤬 Name your branch correctly!"
-        if: |
-          !startsWith(steps.extract_branch.outputs.branch, 'fix')
-          || !startsWith(steps.extract_branch.outputs.branch, 'feature')
-          || !startsWith(steps.extract_branch.outputs.branch, 'test')
-          || !startsWith(steps.extract_branch.outputs.branch, 'hotfix')
       - name: Check Branch Name Ticket Success
         id: branch_ticket_success
         run: echo "🥳 Yay! Correct Ticket Num!"
         if: |
           contains(steps.extract_branch.outputs.branch, 'DOTCOM')
-      - name: Check Branch Name Ticket Failure
-        id: branch_ticket_failure
-        run: echo "🤬 Name your branch correctly!"
-        if: |
-          !contains(steps.extract_branch.outputs.branch, 'DOTCOM')
-      - name: Check Branch Name Suffix Success
-        id: branch_suffix_success
-        run: echo "🥳 Yay! Correct Suffix!"
-        if: |
-          !endsWith(steps.extract_branch.outputs.branch, '0')
-          || !endsWith(steps.extract_branch.outputs.branch, '1')
-          || !endsWith(steps.extract_branch.outputs.branch, '2')
-          || !endsWith(steps.extract_branch.outputs.branch, '3')
-          || !endsWith(steps.extract_branch.outputs.branch, 4)
-          || !endsWith(steps.extract_branch.outputs.branch, '5')
-          || !endsWith(steps.extract_branch.outputs.branch, '6')
-          || !endsWith(steps.extract_branch.outputs.branch, '7')
-          || !endsWith(steps.extract_branch.outputs.branch, '8')
-          || !endsWith(steps.extract_branch.outputs.branch, '9')
       - name: Send Email
         uses: dawidd6/action-send-mail@v3
         with:
@@ -88,7 +63,6 @@ jobs:
         if: |
           steps.branch_prefix_success.outcome != 'success'
           || steps.branch_ticket_success.outcome != 'success'
-          || steps.branch_suffix_success.outcome != 'success'
           || steps.branch_not_main.outcome != 'success'
       - name: List files in the repository
         run: |
