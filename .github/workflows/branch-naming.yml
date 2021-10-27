@@ -61,7 +61,7 @@ jobs:
         if: |
           steps.branch_prefix_success.outcome != 'success'
           || steps.branch_ticket_success.outcome != 'success'
-          || steps.branch_not_main.outcome != 'success'
+          || steps.branch_not_main.outcome == 'success'
       - name: End Job Status
         run: echo "🍏 Finished checking branch name, with a status of ${{ job.status }}."
         
