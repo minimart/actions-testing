@@ -15,6 +15,11 @@ jobs:
         run: echo "Running on branch ${GITHUB_REF#refs/heads/} "
       - run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
+      - name: Check If Main
+        id: branch_not_main
+        run: echo "This is not the main branch!"
+        if: |
+            !startsWith(steps.extract_branch.outputs.branch, 'main')
       - name: Check Branch Name Prefix Success
         id: branch_prefix_success
         run: echo "🥳 Yay! Correct Prefix!"
@@ -49,7 +54,7 @@ jobs:
           || !endsWith(steps.extract_branch.outputs.branch, '1')
           || !endsWith(steps.extract_branch.outputs.branch, '2')
           || !endsWith(steps.extract_branch.outputs.branch, '3')
-          || !endsWith(steps.extract_branch.outputs.branch, '4')
+          || !endsWith(steps.extract_branch.outputs.branch, 4)
           || !endsWith(steps.extract_branch.outputs.branch, '5')
           || !endsWith(steps.extract_branch.outputs.branch, '6')
           || !endsWith(steps.extract_branch.outputs.branch, '7')
@@ -84,6 +89,7 @@ jobs:
           steps.branch_prefix_success.outcome != 'success'
           || steps.branch_ticket_success.outcome != 'success'
           || steps.branch_suffix_success.outcome != 'success'
+          || steps.branch_not_main.outcome != 'success'
       - name: List files in the repository
         run: |
           ls -al ${{ github.workspace }}
