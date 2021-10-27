@@ -49,7 +49,7 @@ jobs:
           # Required recipients' addresses:
           to: ${{env.AUTHOR_EMAIL}},${{env.PUSHER_EMAIL}}
           # Required sender full name (address can be skipped):
-          from: Evereve Codebase # <user@example.com>
+          from: Evereve Codebase <megan.martinson@evereve.com> # <user@example.com>
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional HTML body read from file:
