@@ -1,0 +1,92 @@
+name: branch-naming
+on: [push]
+jobs:
+  Check-Branch-Name:
+    runs-on: ubuntu-latest
+    env:
+      AUTHOR_EMAIL: ${{ join(github.event.commits.*.author.email) }}
+      PUSHER_EMAIL: ${{ github.event.pusher.email }}
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@master
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Get Branch Name
+        shell: bash
+        run: echo "Running on branch ${GITHUB_REF#refs/heads/} "
+      - run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Check Branch Name Prefix Success
+        id: branch_prefix_success
+        run: echo "🥳 Yay! Correct Prefix!"
+        if: |
+          startsWith(steps.extract_branch.outputs.branch, 'fix')
+          || startsWith(steps.extract_branch.outputs.branch, 'feature')
+          || startsWith(steps.extract_branch.outputs.branch, 'test')
+          || startsWith(steps.extract_branch.outputs.branch, 'hotfix')
+      - name: Check Branch Name Prefix Failure
+        id: branch_prefix_failure
+        run: echo " 🤬 Name your branch correctly!"
+        if: |
+          !startsWith(steps.extract_branch.outputs.branch, 'fix')
+          || !startsWith(steps.extract_branch.outputs.branch, 'feature')
+          || !startsWith(steps.extract_branch.outputs.branch, 'test')
+          || !startsWith(steps.extract_branch.outputs.branch, 'hotfix')
+      - name: Check Branch Name Ticket Success
+        id: branch_ticket_success
+        run: echo "🥳 Yay! Correct Ticket Num!"
+        if: |
+          contains(steps.extract_branch.outputs.branch, 'DOTCOM')
+      - name: Check Branch Name Ticket Failure
+        id: branch_ticket_failure
+        run: echo "🤬 Name your branch correctly!"
+        if: |
+          !contains(steps.extract_branch.outputs.branch, 'DOTCOM')
+      - name: Check Branch Name Suffix Success
+        id: branch_suffix_success
+        run: echo "🥳 Yay! Correct Suffix!"
+        if: |
+          !endsWith(steps.extract_branch.outputs.branch, '0')
+          || !endsWith(steps.extract_branch.outputs.branch, '1')
+          || !endsWith(steps.extract_branch.outputs.branch, '2')
+          || !endsWith(steps.extract_branch.outputs.branch, '3')
+          || !endsWith(steps.extract_branch.outputs.branch, '4')
+          || !endsWith(steps.extract_branch.outputs.branch, '5')
+          || !endsWith(steps.extract_branch.outputs.branch, '6')
+          || !endsWith(steps.extract_branch.outputs.branch, '7')
+          || !endsWith(steps.extract_branch.outputs.branch, '8')
+          || !endsWith(steps.extract_branch.outputs.branch, '9')
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # Required mail server address:
+          server_address: mail.meg.codes
+          # Required mail server port:
+          server_port: 465
+          # Optional (recommended): mail server username:
+          username: ${{secrets.MAIL_USERNAME_TEST}}
+          # Optional (recommended) mail server password:
+          password: ${{secrets.MAIL_PASSWORD_TEST}}
+          # Required mail subject:
+          subject: Your Branch ${{ steps.extract_branch.outputs.branch }} Needs Attention
+          # Required recipients' addresses:
+          to: ${{env.AUTHOR_EMAIL}}
+          # Required sender full name (address can be skipped):
+          from: Evereve Codebase # <user@example.com>
+          # Optional whether this connection use TLS (default is true if server_port is 465)
+          secure: true
+          # Optional HTML body read from file:
+          html_body: file://evereve_dev/workflow-tools/bad-branch-name.html
+          # Optional carbon copy recipients:
+          cc: megan.martinson@evereve.com
+          # Optional unsigned/invalid certificates allowance:
+          ignore_cert: true
+        if: |
+          steps.branch_prefix_success.outcome != 'success'
+          || steps.branch_ticket_success.outcome != 'success'
+          || steps.branch_suffix_success.outcome != 'success'
+      - name: List files in the repository
+        run: |
+          ls -al ${{ github.workspace }}
+      - name: End Job Status
+        run: echo "🍏 This job's status is ${{ job.status }}."
+        
